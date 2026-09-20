@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+        <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>La Vetta Roccisoa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>La Vetta Roccisoa</h1>
+        <p>Main Courses</p>
+
+        <div class="menu">
+
+            <label class="menu-item">
+                <input type="checkbox" id="item1" value="110">
+                <span>Pasta</span>
+                <span>₱110.00</span>
+            </label>
+
+            <label class="menu-item">
+                <input type="checkbox" id="item2" value="150">
+                <span>Spaghetti Bolognese</span>
+                <span>₱150.00</span>
+            </label>
+
+            <label class="menu-item">
+                <input type="checkbox" id="item3" value="200">
+                <span>Pizza (any type)</span>
+                <span>₱200.00</span>
+            </label>
+
+            <label class="menu-item">
+                <input type="checkbox" id="item4" value="15000">
+                <span>A5 Wagyu Steak</span>
+                <span>₱15,000.00</span>
+            </label>
+            </div>
+
+        <input class="button" type="button" value="Submit Order" py-click="create_order">
+
+        <div id="result"></div>
+    </div>
+ <a class="link-button" href="index.html">Receipt Generator</a>
+<py-script src="main.py"></py-script>
+</body>
+</html>
